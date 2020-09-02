@@ -2,7 +2,7 @@ const http = require('http')
 
 http.createServer((req, res)=> {
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.write(JSON.stringify({secret:'chair'}))
+  res.write(JSON.stringify({secret:Math.random()}))
   res.end();
 }).listen(8080);
 
